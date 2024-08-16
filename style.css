@@ -21,11 +21,11 @@ body {
   width: 100vw;
 }
 .container {
-  width: 400px;
+  width: 50%;
   height: 560px;
-  margin: 30px auto;
+  margin: 40px auto;
   background-color: var(--clr-blanco);
-  padding: 30px;
+  padding: 35px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;

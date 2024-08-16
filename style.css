@@ -1,7 +1,7 @@
 :root{
   --fuente-uno: Arial, Helvetica, sans-serif ;
   --clr-fondo: linear-gradient(45deg, violet, darkblue);
-  --clr-fondo-todo: white;
+  --clr-blanco: white;
   --clr-btn-add: dodgerblue;
   --clr-btn-del: rgb(233, 15, 15);
 }
@@ -16,15 +16,15 @@ body {
   font-family: var(--fuente-uno);
   line-height: 1.5;
   background: var(--clr-fondo);
-  color: white;
+  color: var(--clr-blanco) ;
   height: 100vh;
   width: 100vw;
 }
 .container {
   width: 400px;
-  height: 600px;
+  height: 560px;
   margin: 30px auto;
-  background-color: var(--clr-fondo-todo);
+  background-color: var(--clr-blanco);
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -37,77 +37,66 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    form{
+      display: flex;
+    
     input{
       border-radius: 10px 0px 0 10px;
       border: 2px solid var(--clr-btn-add);
+      padding: 15px 10px;
+      outline: none;
+      width: 100%;
     }
+  }
   }
   .btn-add {
     padding: 5px 15px;
     border: none;
     border-radius: 0 10px 10px 0;
-    color: white;
+    color: var(--clr-blanco);
     font-family: fantasy;
     background-color: var(--clr-btn-add);
     font-size: 1.6rem;
     outline: none;
     &:hover {
       cursor: pointer;
-      background-color: blue;
+      background-color: rgb(0, 162, 255);
+      /* transition: 2s; */
     }
   }
 }
 
-
-
-
-form {
-  display: flex;
-}
-
-input {
-  padding: 15px 10px;
-  outline: none;
-  width: 400px;
-}
-
 .li-container {
-  background-color: white;
+  background-color: var(--clr-blanco);
   width: 100%;
   color: darkslategray;
   margin-top: 20px;
   overflow-y: scroll;
-}
-
-ul {
-  padding: 0;
-}
-
-li {
-  list-style: none;
-  background-color: lightgray;
-  border-radius: 10px;
-  margin-top: 15px;
-  display: flex;
-}
-
-li p {
-  margin: 0;
-  padding: 15px;
-  width: 100%;
+  li {
+    list-style: none;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    p {
+      margin: 0;
+      padding: 15px;
+      width: 100%;
+    }
+  }
 }
 
 .btn-delete {
-  margin-left: auto;
+  /* margin-left: auto; */
   border: none;
   background-color: var(--clr-btn-del);
-  color: white;
+  color: var(--clr-blanco);
   font-weight: bold;
-  padding: 5px 20px;
+  padding: auto;
   outline: none;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 10%;
+  width: 15%;
   font-size: 1.2em;
 }
 

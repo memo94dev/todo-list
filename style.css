@@ -21,7 +21,8 @@ body {
   width: 100vw;
 }
 .container {
-  width: 50%;
+  width: 80%;
+  max-width: 520px;
   height: 560px;
   margin: 40px auto;
   background-color: var(--clr-blanco);

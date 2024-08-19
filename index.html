@@ -12,14 +12,14 @@
 </head>
 
 <body>
-    <div class="container" id="contenido">
+    <div id="contenido" class="container">
         <div class="temas">
             <button title="cambiar color de fondo" class="cambiarTemados" type="button" onclick="temauno()"></button>
             <button title="cambiar color de fondo" class="cambiarTematres" type="button" onclick="temados()"></button>
             <button title="cambiar color de fondo" class="cambiarTemadefault" type="button" onclick="tema()"></button>
         </div>
 
-        <h1>Mi Lista de Tareas</h1>
+        <h1 id="titulo">Mi Lista de Tareas</h1>
 
         <div class="search">
             <form>
@@ -35,8 +35,24 @@
         <div class="empty">
             <p>No tienes tareas pendientes.</p>
         </div>
-
     </div>
 </body>
+<button class="btn-descarga" onclick="descargar()">d</button>
+<script>
+    function descargar(){
+  // Supongamos que tienes un elemento HTML con el contenido que deseas exportar
+  const contenidoHTML = document.getElementById('contenido').innerText;
+  
+  // Crea un enlace de descarga para el archivo TXT
+  const enlaceDescarga = document.createElement('a');
+  enlaceDescarga.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(contenidoHTML);
+  enlaceDescarga.download = 'Mi Lista.txt';
+  enlaceDescarga.textContent = 'Descargar TXT';
 
+  // Agrega el enlace al DOM
+  document.body.appendChild(enlaceDescarga);
+  enlaceDescarga.click();
+  document.body.removeChild(enlaceDescarga);
+}
+</script>
 </html>

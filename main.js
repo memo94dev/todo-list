@@ -64,17 +64,3 @@ function tema(){
   var cuerpo = document.querySelector("body");
   cuerpo.style.background = "var(--clr-fondo)";
 }
-
-// Función para exportar Lista a tipo .txt
-
-// function exportar(){
-//   var contenido = document.getElementById("contenido").value;
-//   var enlace = document.createElement("a");
-//   enlace.setAtribute("href" , "data:text/plain;charset=utf-8," + encodeURIComponent(contenido));
-//   enlace.setAtribute("download" , "Mi Lista.txt");
-//   enlace.style.display = "none";
-
-//   document.body.appendChild(enlace);
-//   enlace.click();
-//   document.body.removeChild(enlace);
-// }

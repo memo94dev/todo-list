@@ -60,6 +60,13 @@ body {
     .cambiarTemadefault {
       background: var(--clr-fondo);
     }
+
+    .btn-descarga {
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 
   h1 {

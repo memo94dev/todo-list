@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,17 @@
     <script src="./main.js" defer></script>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <div class="container">
+    <div class="container" id="contenido">
+        <div class="temas">
+            <button class="cambiarTemados" type="button" onclick="temauno()"></button>
+            <button  class="cambiarTematres" type="button" onclick="temados()"></button>
+            <button  class="cambiarTemadefault" type="button" onclick="tema()"></button>
+        </div>
+
         <h1>Mi Lista de Tareas</h1>
+
         <div class="search">
             <form>
                 <input type="text" placeholder="Agregar tarea...">
@@ -20,12 +29,14 @@
         </div>
         <div class="li-container">
             <ul>
-                
+
             </ul>
         </div>
         <div class="empty">
             <p>No tienes tareas pendientes.</p>
         </div>
+
     </div>
 </body>
+
 </html>

@@ -1,6 +1,8 @@
 :root{
   --fuente-uno: Arial, Helvetica, sans-serif ;
   --clr-fondo: linear-gradient(45deg, violet, darkblue);
+  --clr-fondo-2: linear-gradient(45deg, crimson, orange);
+  --clr-fondo-3: linear-gradient(45deg, purple, red);
   --clr-blanco: white;
   --clr-btn-add: dodgerblue;
   --clr-btn-del: rgb(233, 15, 15);
@@ -11,6 +13,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-size: 16px;
   font-family: var(--fuente-uno);
@@ -20,6 +23,7 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
 .container {
   width: 80%;
   max-width: 520px;
@@ -31,10 +35,33 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+
+  .temas {
+    display: flex;
+    justify-content: end;
+    button{
+      width: 25px;
+      height: 25px;
+      border: none;
+      border-radius: 50%;
+      margin: 0 5px;
+    }
+    .cambiarTemados{
+      background: var(--clr-fondo-2);
+    }
+    .cambiarTematres{
+      background: var(--clr-fondo-3);
+    }
+    .cambiarTemadefault{
+      background: var(--clr-fondo);
+    }
+  }
+
   h1 {
     text-align: center;
     color: dimgray;
   }
+
   .search {
     margin-left: auto;
     margin-right: auto;

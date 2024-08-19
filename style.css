@@ -65,6 +65,12 @@ body {
       img {
         width: 30px;
         height: 30px;
+        border-radius: 50%;
+        filter: drop-shadow(2px 1px rgb(9, 127, 224));
+        &:active {
+          transform: translate(2px);
+          filter: none;
+        }
       }
     }
   }

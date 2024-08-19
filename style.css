@@ -31,7 +31,7 @@ body {
   max-height: 560px;
   margin: 40px auto;
   background-color: var(--clr-blanco);
-  padding: 35px;
+  padding: 15px 35px 35px 35px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -40,11 +40,12 @@ body {
     display: flex;
     justify-content: end;
     button{
-      width: 25px;
-      height: 25px;
+      width: 30px;
+      height: 30px;
       border: none;
       border-radius: 50%;
       margin: 0 5px;
+      cursor: pointer;
     }
     .cambiarTemados{
       background: var(--clr-fondo-2);

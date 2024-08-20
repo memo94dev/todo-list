@@ -10,16 +10,16 @@ addBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
 // Agregando un contador a la función crear Lista de Tareas, mas una constante para unir el numero mas el texto textNumerado
-  suma++;
-  // console.log(suma);
 
   const text = input.value;
-  const textNumerado = (suma + "- " + text);
 
   if (text !== "") {
     const li = document.createElement("li");
     const p = document.createElement("p");
-    p.textContent = textNumerado;  
+    suma++;
+    // console.log(suma);
+    const textNumerado = (suma + "- " + text);
+    p.textContent = textNumerado;
 
     li.appendChild(p);
     li.appendChild(addDeleteBtn());

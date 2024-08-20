@@ -9,7 +9,7 @@ let suma = 0;
 addBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
-// Agregando un contador a la función crear Lista de Tareas, mas una constante para unir el numero mas el texto textNumerado
+  // Agregando un contador a la función crear Lista de Tareas, mas una constante para unir el numero mas el texto textNumerado
 
   const text = input.value;
 
@@ -20,6 +20,12 @@ addBtn.addEventListener("click", (e) => {
     // console.log(suma);
     const textNumerado = (suma + "- " + text);
     p.textContent = textNumerado;
+
+    // Función para contar el total de li
+
+    // const litotal = document.querySelectorAll("li");
+    // let total = litotal.length;
+    // console.log(total);
 
     li.appendChild(p);
     li.appendChild(addDeleteBtn());
@@ -56,21 +62,21 @@ function addDeleteBtn() {
 
 // Función para cambiar el fondo del body
 
-function temauno(){
+function temauno() {
   var cuerpo = document.querySelector("body");
   cuerpo.style.background = "var(--clr-fondo-2)";
 }
 
 // Función para cambiar el fondo del body
 
-function temados(){
+function temados() {
   var cuerpo = document.querySelector("body");
   cuerpo.style.background = "var(--clr-fondo-3)";
 }
 
 // Función para cambiar el fondo del body al predeterminado
 
-function tema(){
+function tema() {
   var cuerpo = document.querySelector("body");
   cuerpo.style.background = "var(--clr-fondo)";
 }
@@ -79,7 +85,7 @@ function tema(){
 
 function descargar() {
   // Supongamos que tienes un elemento HTML con el contenido que deseas exportar
-  
+
   const contenidoHTML = document.getElementById('contenido').innerText;
 
   // Crea un enlace de descarga para el archivo TXT

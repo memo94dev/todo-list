@@ -130,6 +130,7 @@ body {
       display: flex;
 
       p {
+        text-transform: capitalize;
         margin: 0;
         padding: 15px;
         width: 100%;

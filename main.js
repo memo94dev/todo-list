@@ -4,16 +4,22 @@ const input = document.querySelector("input");
 const addBtn = document.querySelector(".btn-add");
 const ol = document.querySelector("ol");
 const empty = document.querySelector(".empty");
+let suma = 0;
 
 addBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
+// Agregando un contador a la función crear Lista de Tareas, mas una constante para unir el numero mas el texto textNumerado
+  suma++;
+  // console.log(suma);
+
   const text = input.value;
+  const textNumerado = (suma + "- " + text);
 
   if (text !== "") {
     const li = document.createElement("li");
     const p = document.createElement("p");
-    p.textContent = text;
+    p.textContent = textNumerado;  
 
     li.appendChild(p);
     li.appendChild(addDeleteBtn());
@@ -24,6 +30,8 @@ addBtn.addEventListener("click", (e) => {
   }
 });
 
+// Función para crear botón para eliminar listas
+
 function addDeleteBtn() {
   const deleteBtn = document.createElement("button");
 
@@ -33,11 +41,13 @@ function addDeleteBtn() {
   deleteBtn.addEventListener("click", (e) => {
     const item = e.target.parentElement;
     ol.removeChild(item);
+    suma--;
 
     const items = document.querySelectorAll("li");
 
     if (items.length === 0) {
       empty.style.display = "block";
+      suma = 0;
     }
   });
 

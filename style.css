@@ -162,3 +162,17 @@ body {
     padding-left: 15px;
   }
 }
+
+/* .li-container::-webkit-scrollbar-thumb {
+  background-color: var(--clr-fondo);
+  border-radius: 5px;
+} */
+
+.li-container {
+  overflow-y: scroll;
+  scrollbar-color: var(--clr-btn-add) white;
+  scrollbar-width: auto;
+  &:hover {
+    scrollbar-width: 5px;
+  }
+}

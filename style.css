@@ -49,6 +49,8 @@ body {
       cursor: pointer;
     }
 
+/* Clases de los botones para cambiar de tema de fondo, mas el botón de descarga */
+
     .cambiarTemados {
       background: var(--clr-fondo-2);
     }
@@ -163,16 +165,22 @@ body {
   }
 }
 
-/* .li-container::-webkit-scrollbar-thumb {
-  background-color: var(--clr-fondo);
-  border-radius: 5px;
-} */
+/* Clases para el scrollbar, según el tema activado */
 
-.li-container {
+.tema-uno {
   overflow-y: scroll;
   scrollbar-color: var(--clr-btn-add) white;
   scrollbar-width: auto;
-  &:hover {
-    scrollbar-width: 5px;
-  }
+}
+
+.tema-dos {
+  overflow-y: scroll;
+  scrollbar-color: orange white;
+  scrollbar-width: auto
+}
+
+.tema-tres {
+  overflow-y: scroll;
+  scrollbar-color: crimson white;
+  scrollbar-width: auto
 }

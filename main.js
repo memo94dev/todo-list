@@ -64,21 +64,33 @@ function addDeleteBtn() {
 
 function temauno() {
   var cuerpo = document.querySelector("body");
+  var listado = document.querySelector("div.li-container");
   cuerpo.style.background = "var(--clr-fondo-2)";
+  listado.classList.add("tema-dos");
+  listado.classList.remove("tema-uno");
+  listado.classList.remove("tema-tres");
 }
 
 // Función para cambiar el fondo del body
 
 function temados() {
   var cuerpo = document.querySelector("body");
+  var listado = document.querySelector("div.li-container");
   cuerpo.style.background = "var(--clr-fondo-3)";
+  listado.classList.add("tema-tres");
+  listado.classList.remove("tema-uno");
+  listado.classList.remove("tema-dos");
 }
 
 // Función para cambiar el fondo del body al predeterminado
 
 function tema() {
   var cuerpo = document.querySelector("body");
+  var listado = document.querySelector("div.li-container");
   cuerpo.style.background = "var(--clr-fondo)";
+  listado.classList.add("tema-uno");
+  listado.classList.remove("tema-dos");
+  listado.classList.remove("tema-tres");
 }
 
 // Función para descargar la lista generada en formato .txt

@@ -107,7 +107,7 @@ body {
     color: var(--clr-blanco);
     font-family: fantasy;
     background-color: var(--clr-btn-add);
-    font-size: 1.6rem;
+    font-size: 2rem;
     outline: none;
 
     &:hover {
